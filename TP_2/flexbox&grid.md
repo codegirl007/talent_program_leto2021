@@ -6,7 +6,10 @@
 
 * <https://css-tricks.com/snippets/css/a-guide-to-flexbox/> - anglický přehled
 * <https://www.vzhurudolu.cz/prirucka/css-flexbox> - český přehled
-* <https://tobiasahlin.com/blog/common-flexbox-patterns> - nejčastější příklady užití s úkázkovým kódem
+* <https://tobiasahlin.com/blog/common-flexbox-patterns> - nejčastější příklady užití s ukázkovým kódem
+* <https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/> - vysvětlení, proč nepoužívat flexbox pro layout celé stránky
+* <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox> - podpora flexboxu u prohlížečů
+* <https://github.com/philipwalton/flexbugs> - flexbox bugs
 
 ### Grid
 * <https://css-tricks.com/snippets/css/complete-guide-grid/> - anglický přehled
@@ -16,34 +19,34 @@
 * <https://grid.layoutit.com/> - interaktivní tvorba grid layoutu
 
 ## Flexbox
-Je určen pro layout jednotlivých komponent webových stránek jako jsou menu, odkazy, seznamy produktů apod. Pro využití k nastavení layoutu celé stránky je vhodnější `grid` (vysvětlení [zde](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)). Flexbox vytváří jednorozměrový layout - řádek nebo sloupec, jednotlivé sloupce nebo řádky lze ale zalamovat. Ve flexbox layoutu rozlišujeme dva prvky, které můžeme upravovat samostatně. 
+Je určen pro layout jednotlivých komponent webových stránek jako jsou menu, odkazy, seznamy produktů apod. Pro využití k nastavení layoutu celé stránky je vhodnější `grid` (vysvětlení [zde](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)). Flexbox vytváří jednorozměrový layout - řádek nebo sloupec, jednotlivé sloupce nebo řádky lze ale zalamovat. Ve flexbox layoutu rozlišujeme dva prvky, které nastavujeme samostatně. 
 
- * **Flexbox container** - obalový element, který v sobě obsahuje další elementy, u kterých nastavujeme layout
+ * **Flexbox container** - obalový element, který v sobě obsahuje další elementy, u kterých nastavujeme umístění
 
  * **Flexbox item** - jednotlivé elementy ve flexbox containeru
 
- Flexbox je podporován všemi moderními prohlížeči, ale některé vlastnosti mohou vyžadovat specifické prefixy pro konkrétní prohlížeče nebo dokonce daná vlastnost může být pojmenována jinak.
+ Flexbox je podporován všemi moderními prohlížeči, ale některé vlastnosti mohou vyžadovat specifické prefixy pro konkrétní prohlížeče nebo dokonce daná vlastnost může být pojmenována jinak. Přehled a vývoj celé situace je popsán [zde](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox). Konkrétní případy, kdy se flexbox nechová koretně v některých prohlížečích a jeji workaroudy jsou popsány [zde](https://github.com/philipwalton/flexbugs).
 
 ### Flexbox container
 
 #### `display`
 
-* `flex`: nastaví element na flexbox layout a řádky před tímto elementam a za ní zalamuje
+* `flex`: nastaví element na flexbox layout a řádky před tímto elementam a za ním zalamuje
 * `inline-flex`: nezalamuje elementy před a za flexbox elementem
 
 #### `flex-direction`
 
-* `row`: elementy uvnitř flexbox containeru se rovnají do řádku z leva doprava\* (defaultní hodnota)
-* `row-reverse`: elementy uvnitř flexbox conteineru se rovnají do řádku z prava do leva\*
+* `row`: elementy uvnitř flexbox containeru se rovnají do řádku zleva doprava\* (defaultní hodnota)
+* `row-reverse`: elementy uvnitř flexbox conteineru se rovnají do řádku zprava do leva\*
 * `column`: elementy uvnitř flexbox containeru se rovnají do slopce zhora dolů
-* `column-reverse`: elementy uvnitř flexbox containeru se rovnají do slopce zespoda nahoru
+* `column-reverse`: elementy uvnitř flexbox containeru se rovnají do slopce zezdola nahoru
 
 > **\*** směr platí pouze pokud máme nastaveno psaní zleva doprava (`ltr`). Pro nastavení zprava doleva (`rtl`) jsou směry opačně
 
 #### `flex-wrap`
 * `nowrap`: nezalamuje
 * `wrap`: zalamuje
-* `wrap-reverse`: zalamuje ale ze sdola nahoru
+* `wrap-reverse`: zalamuje ale zezdola nahoru
 
 #### `flex-flow` 
 Zkratka pro `flex-direction` a `flex-wrap`.
@@ -61,7 +64,7 @@ flex-flow: column wrap
 * `right`: elementy jsou řazeny od pravého okraje containeru, pokud to není v rozporu s `flex-direction` v takovém případě se chová, jako by bylo nastaveno `end`
 * `center`: elementy jsou vycentrovány v rovině řazení
 * `space-between`elementy jsou rozmístěny rovnoměrně, aby pouze mezi nimi byl prostor (první a poslední element je umístěn hned na začátku, respektivě na konci)
-* `space-around`: elementy jsou rozmístěny rovnoměrně tak, každý měl kolem sebe stejně široký prostor, což vede k tomo, že opticky nejsou rozmístěny rovnomerně, protože před prvním a za posledním elementem je pouze jeden prostor, kdežto mezi dvěma elementy jsou tyto prostory dva (jeden od jednoho elementu a druhý od druhého)
+* `space-around`: elementy jsou rozmístěny rovnoměrně tak, aby každý měl kolem sebe stejně široký prostor, což vede k tomo, že opticky nejsou rozmístěny rovnomerně, protože před prvním a za posledním elementem je pouze jeden prostor, kdežto mezi dvěma elementy jsou tyto prostory dva (jeden od jednoho elementu a druhý od druhého)
 * `space-evenly`: elementy jsou rozmístěny rovnoměrně
 * \+ `safe/unsafe`: definuje zda element může přesahovat flexbox container
 
@@ -107,7 +110,11 @@ Zkratka pro zarovnání položek v obou směrech.
 
 #### `place-content`
 
-Zkratka peo zarovnání všech položek jako celku v obouch směrech.
+Zkratka pro zarovnání všech položek jako celku v obouch směrech.
+
+#### `gap`
+
+Nastavuje prostor mezi vnitřními elementy.
 
 ### Flexbox item
 
@@ -126,7 +133,7 @@ tak budou distrinuovány rovnoměrně. Pokud jeden z elementů bude mít nastave
 
 #### `flex-shrink`
 
-Definuje zda a o kolik se může slement smrštit, pokud je to potřeba. Pouze kladná čísla.
+Definuje zda a o kolik se může element smrštit, pokud je to potřeba. Pouze kladná čísla.
 
 #### `flex-basis`
 
@@ -150,9 +157,9 @@ Zkratka pro zarovnání položky v obou směrech.
 
 ## Grid
 
-Frid slouží pro vytvoření layoutu, který je dvourozměrný. Je tedy ideální pro rozvržení celé webové stránky (hlavička, postraní navigace, obsah, patička). Stejně jako u flexboxu rozlišujeme dva základní prvky:
+Frid slouží pro vytvoření layoutu, který je dvourozměrný. Je tedy ideální pro rozvržení celé webové stránky (hlavička, postranní navigace, obsah, patička). Stejně jako u flexboxu rozlišujeme dva základní prvky:
 
-* **Grid container** - obalový element, který v sobě obsahuje další elementy, u kterých nastavujeme layout
+* **Grid container** - obalový element, který v sobě obsahuje další elementy, u kterých nastavujeme rozmístění
 
 * **Grid item** - jednotlivé elementy v grid containeru
 
@@ -173,13 +180,13 @@ grid-template-rows: 25% auto 100px;
 
 ```
 /* s pojmenováním oddělujících čar */
-grid-template-columns: [first] 40px [second] auto [third] 20px;
+grid-template-columns: [first] 40px [second] auto [third] 20px [last];
 grid-template-rows: [1] 25% [2] auto [3] 100px [4];
 ```
 
 Oddělující čáry mohou mít i více jak jedno pojmenování, oddělujeme je mezerou.
 
-> "fr" jednotka, která zastupuje poměry volného prostoru. 1fr 1fr 1fr rozdělí grid na třetiny.
+> "fr" je jednotka, která zastupuje poměry volného prostoru. 1fr 1fr 1fr rozdělí grid na třetiny.
 
 #### `grid-template-areas`
 
@@ -188,7 +195,7 @@ Slouží k pojmenování oblastí v gridu, aby jsme na ně poté mohli jednotliv
 ```
 grid-template-areas: 
     "header header header header"
-    "main main . sidebar"
+    "menu . content content"
     "footer footer footer footer"
 ```
 
@@ -196,7 +203,29 @@ Tečka zastupuje prázdnou buňku.
 
 #### `grid-template`
 
-Zkratka pro vlastnosti `grid-template-columns, grid-template-rows` a `grid-template-areas`.
+Zkratka pro vlastnosti `grid-template-columns, grid-template-rows` a `grid-template-areas`. 
+
+Zapisuje se v této kombinaci : 
+* `none`: všechny hodnoty se nastaví na none
+
+```
+grid-template: none
+```
+
+* \[ \<`grid-template-rows`\> / \<`grid-template-columns`\> \]
+
+```
+grid-template: 20px auto 2rem / 20px 20px 20px
+```
+
+* \[ \<`line-names`\>? \<`string`\> \<`track-size`\>? \<`line-names`\>? \]+ \[ / \<`explicit-track-list`\> \]?
+
+```
+grid-template: 
+                "a b c" 20px
+                "a b c" 20px
+                "d d d" 10px / 1fr 1fr 1fr
+```
 
 #### `column-gap` & `row-gap` & `grid-column-gap` & `grid-row-gap`
 
@@ -264,7 +293,15 @@ Určuje kam umístit elementy, která nemají konkrétně specifikované místo.
 
 Zkratka pro `grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns` a `grid-auto-flow`.
 
+Zápis:
+* `none`
+* `grid-template-rows` / `grid-template-columns`
+* `grid-template-areas`
+* `grid-template-rows` / \[`grid-auto-flow`\] `grid-auto-columns`
+* \[`grid-auto-flow`\] `grid-auto-rows` / `grid-template-columns`
+
 ### Grid item
+ Pro rychlé pohopení vlastností [interaktivní hra](http://cssgridgarden.com/#cs).
 
 #### `grid-column-start`, `grid-column-end`, `grid-row-start` a `grid-row-end`
 
