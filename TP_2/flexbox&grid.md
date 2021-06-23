@@ -6,13 +6,14 @@
 
 * <https://css-tricks.com/snippets/css/a-guide-to-flexbox/> - anglický přehled
 * <https://www.vzhurudolu.cz/prirucka/css-flexbox> - český přehled
-* <https://tobiasahlin.com/blog/common-flexbox-patterns> - nejčastější příklady užitý s úkázkovým kódem
+* <https://tobiasahlin.com/blog/common-flexbox-patterns> - nejčastější příklady užití s úkázkovým kódem
 
 ### Grid
 * <https://css-tricks.com/snippets/css/complete-guide-grid/> - anglický přehled
 * <https://www.vzhurudolu.cz/prirucka/css-grid> - český přehled
 * <https://cssgrid.io/> - video tutoriály jen na css grid
 * <http://cssgridgarden.com/#cs> - hra na procvičování
+* <https://grid.layoutit.com/> - interaktivní tvorba grid layoutu
 
 ## Flexbox
 Je určen pro layout jednotlivých komponent webových stránek jako jsou menu, odkazy, seznamy produktů apod. Pro využití k nastavení layoutu celé stránky je vhodnější `grid` (vysvětlení [zde](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)). Flexbox vytváří jednorozměrový layout - řádek nebo sloupec, jednotlivé sloupce nebo řádky lze ale zalamovat. Ve flexbox layoutu rozlišujeme dva prvky, které můžeme upravovat samostatně. 
