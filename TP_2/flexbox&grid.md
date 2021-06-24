@@ -1,8 +1,7 @@
 # [Flexbox](#flexbox) & [Grid](#grid)
 `Flexbox` a `grid` jsou hodnoty CSS pro vlastnost `display`, pomocí kterých lze vytvářet layout stránek. Při použití v kombinaci s media query, lze nastavit layouty pro různě veliké obrazovky.
 
-## Zdroje:
-### Flexbox
+### Flexbox - zdroje
 
 * <https://css-tricks.com/snippets/css/a-guide-to-flexbox/> - anglický přehled
 * <https://www.vzhurudolu.cz/prirucka/css-flexbox> - český přehled
@@ -11,7 +10,7 @@
 * <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox> - podpora flexboxu u prohlížečů
 * <https://github.com/philipwalton/flexbugs> - flexbox bugs
 
-### Grid
+### Grid - zdroje
 * <https://css-tricks.com/snippets/css/complete-guide-grid/> - anglický přehled
 * <https://www.vzhurudolu.cz/prirucka/css-grid> - český přehled
 * <https://cssgrid.io/> - video tutoriály jen na css grid
