@@ -4,3 +4,4 @@ https://portfoliotest.janca007.repl.co/
 
 HTML forms:
 https://codesandbox.io/s/tp1-html-opakovani-pcrwr?file=/index.html
+<<<<<<< HEAD
