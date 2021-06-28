@@ -1,0 +1,47 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
+.jedna {background-color: red;}
+.dva {background-color: green;}
+.tri {background-color: blue;}
+.ctyri {background-color: orange;}
+
+.obdelnik {
+    width: 300px;
+    height: 100px;
+}
+
+.posun:hover {
+    transform: translate(800px, 300px);
+}
+
+.rotace:hover {
+    transform: rotate(30deg);
+    transform-origin: 0 0;
+}
+
+.rotace:active {
+    transform: rotate(30deg);
+    transform-origin: top right;
+}
+
+.zvetseni:hover {
+    transform: scale(2);
+}
+
+.zvetseni:active {
+    transform: scale(3, 0.5);
+}
+
+/* .zvetseni:hover {
+    transform: scale(2);
+    transform-origin: bottom right; 
+} */
+
+.zkoseni:hover {
+    transform: skew(30deg);
+}
+
+.zkoseni:active {
+    transform: skew(30deg, 15deg);
+}

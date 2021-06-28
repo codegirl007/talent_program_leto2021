@@ -1,0 +1,50 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(252, 217, 153);
+}
+
+.light-blue { 
+    background-color: rgb(81, 202, 243); 
+    width: 15px;
+    height: 30px;
+}
+.white-leftup, .white-leftdown, .white-long, .white-small { background-color: white; }
+.red { background-color: red; }
+.blue { background-color: blue; }
+.yellow {background-color: yellow; }
+
+.container {
+    box-shadow: 10px 20px 10px rgb(0 0 0 / 50%);
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 120px 340px 50px;
+    grid-template-rows: 195px 195px 50px 50px;
+    gap: 20px;
+    background-color: black;
+    max-width: 550px;
+}
+
+.white-leftdown {
+    grid-row: 2 / 3;
+}
+
+.blue {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+}
+
+.red {
+    grid-row: 1 / 3;
+    grid-column: 2 / 4;
+}
+
+.white-long {
+    grid-row: 3 / 5;
+}

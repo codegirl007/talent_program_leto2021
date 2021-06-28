@@ -1,0 +1,46 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
+.kolecko {background-color: violet;width: 250px; height: 250px; border-radius: 50%;}
+
+@keyframes pohyb {
+    from    { transform: translate(0, 0); };
+    to      { transform: translate(600px, 0); };
+}
+
+/* .kolecko {
+    animation: pohyb 3s;
+} */
+
+/* VÍCEKROKOVÁ ANIMACE */
+@keyframes cesta {
+    0% { 
+        transform: translate(0, 0); 
+        /* transform: translate(0,150px);
+        background-color: blue; */
+    }
+    60% { 
+        transform: translate(600px, 0); 
+        background-color: orange;
+        border-radius: 0;
+    } 
+    100% { 
+        transform: translate(600px, 400px); 
+        background-color: yellow;
+        border-radius: 50%;
+    } 
+}
+
+.kolecko {
+    animation: cesta 6s;
+}
+
+/* .kolecko {
+    animation-name: cesta;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+} */

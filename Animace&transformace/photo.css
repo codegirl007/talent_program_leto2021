@@ -1,0 +1,41 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
+.photo {
+    max-width: 500px;
+    display: inline-block;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.photo__image {
+    width: 100%;
+    /*mezera cca 3px zrušena*/
+    /* display: block;  */
+    /* border: 5px solid red; */
+    /* transition: transform 0.5s; */
+}
+
+.photo__description{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* position: absolute;
+    left: 0;
+    top: 100%; */
+    /* width: 100%; */
+    /* transition: transform 0.5s; */
+}
+
+.photo__description p {
+    margin: 0;
+}
+
+/* .photo:hover .photo__description {
+    transform: translateY(-100%); 
+} */
+
+/* .photo:hover .photo__image {
+    transform: scale(110%);
+} */
