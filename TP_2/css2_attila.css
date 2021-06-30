@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(http://i.imgur.com/9kh3G8L.jpg);
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+.profile-card {
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 0 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 5px;
+}
+
+.head {
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.profile-image>img {
+    width: 100px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 50%;
+    filter: grayscale(0.7);
+}
+
+.name-headline>h1 {
+    text-transform: uppercase;
+}
+
+.name-headline>h2 {
+    font-size: 18px;
+}
+
+.name-headline>span {
+    font-size: 14px;
+}
+
+.content {
+    position: relative;
+    top: -30px;
+    border-top: 1px solid rgb(71, 71, 71);
+}
+
+.about {
+    padding: 10px 30px;
+    width: 330px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links>h2 {
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+}
+
+.links>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fa {
+    color: rgb(71, 71, 71);
+}
