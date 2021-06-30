@@ -1,0 +1,122 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+body {
+    margin: 0 auto;
+    width: 1200px;
+    color: #222;
+    font-size: 14px;
+}
+
+header>img {
+    width: 100%;
+    border-top: 10px solid black;
+}
+
+main {
+    position: relative;
+    top: -150px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 70px;
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.text {
+    position: relative;
+    top: 60px;
+    font-family: 'Josefin Sans', serif;
+    line-height: 1.6;
+}
+
+.accent {
+    font-weight: bolder;
+}
+
+.bigger {
+    font-size: 16px;
+}
+
+.big-ul {
+    padding: 30px 50px;
+    font-size: 16px;
+}
+
+
+ul {
+    list-style-type: square;
+    padding: 10px 50px 20px 50px;
+}
+
+.blockquote {
+    background-color: #222;
+    color: white;
+    font-family: "Abril Fatface", serif;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    width: 750px;
+    left: -25px;
+    margin: 10px 0;
+}
+
+.blockquote::before { 
+    content: '”'; 
+    display: inline-block;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    font-size: 100px;
+    transform: rotate(180deg);
+}	
+
+h2 {
+    padding: 20px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+h4 {
+    font-family: Merriweather;
+    font-size: 14px;
+    font-style: italic;
+}
+
+p {
+    padding: 10px 0;
+}
+
+hr {
+    border-top: 5px solid black;
+}
