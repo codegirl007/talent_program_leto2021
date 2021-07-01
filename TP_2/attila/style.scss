@@ -1,0 +1,90 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+$mainFont : 'Raleway', sans-serif;
+$mainSize: 18px;
+$mainColor: #3a3939;
+$circle: 50%;
+$cardWith: 600px;
+
+@mixin reset(){
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('http://i.imgur.com/9kh3G8L.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: $mainFont;
+
+    .profile-card{
+        width: $cardWith;
+        margin: auto;
+        margin-top: 240px;
+        background-color: rgba(255, 255, 255, 0.502);
+        position: relative;
+        border-radius: .3rem;
+        box-shadow: 11px 13px 51px 15px $mainColor;    
+
+        .profile-image {         
+             img{
+                border: 1px solid $mainColor;
+                border-radius: $circle;
+                position: absolute;
+                top: -65px;
+                left: 235px;
+            }  
+        } 
+
+        .name-headline{
+            text-align: center;
+            
+            h1{
+                text-transform: uppercase;
+                padding-top: 70px;
+                margin-bottom: 0;
+            }
+            span{
+                font-size: 16px;
+            }
+            p{
+                margin-top: 10px;
+                font-size: $mainSize;
+            }
+        }
+
+        h2{
+            font-size: $mainSize;
+            margin: 0 0 7px 0;
+        }
+        .content{
+            padding: 10px 25px 25px 25px;
+
+            .about{
+                border-top: 1px solid $mainColor;
+                padding: 30px 95px 30px 70px;
+                font-size: $mainSize;
+                line-height: 1.6;
+            }
+            .links {
+                h2{
+                    text-align: center;
+                }
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    list-style-type: none;
+                    @include reset();
+                    li{
+                        padding: 3px;
+                        .fa-2x{
+                            color: $mainColor;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
