@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Mock form</title>
+</head>
+<body>
+    <form class="form" action="" method="GET">
+
+        <fieldset>
+            <legend>Interesting application form &#128580</legend>
+           
+                <fieldset class="form-field">
+                    <legend>What is your name?</legend>
+                    <input type="text">
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <legend>What is your favourite color?</legend>
+                        <div class="form-field__color">
+                            <input type="checkbox" id="red" name="red">
+                            <label for="red">Red</label>
+                        </div>
+                        <div class="form-field__color">
+                            <input type="checkbox" id="green" name="green">
+                            <label for="green">Green</label>
+                        </div>
+                        <div class="form-field__color">
+                            <input type="checkbox" id="blue" name="blue">
+                            <label for="blue">Blue</label>
+                        </div>
+                        <div class="form-field__color">
+                            <input type="checkbox" id="other" name="other">
+                            <label for="other">Other</label>
+                            <input type="text">
+                        </div>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <legend>Would you like to become a developer?</legend>
+                        <div class="form-field__radio">
+                            <input type="radio" id="yes" name="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="form-field__radio">
+                            <input type="radio" id="ano" name="ano">
+                            <label for="ano">Ano</label>
+                        </div>
+                        <div class="form-field__radio">
+                            <input type="radio" id="igen" name="igen">
+                            <label for="igen">Igen</label>
+                        </div>
+                        <div class="form-field__radio">
+                            <input type="radio" id="znak" name="znak">
+                            <label for="znak">是</label>
+                        </div>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <legend>Why would you like to become a developer?</legend>
+                    <textarea id="textarea" name="textarea" rows="5"></textarea>
+                </fieldset>
+
+                <button class="button" type="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
