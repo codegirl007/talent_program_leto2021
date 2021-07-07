@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  background-image: url(http://i.imgur.com/9kh3G8L.jpg);
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2;
+}
+body .profile-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+}
+body .profile-card .head {
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+body .profile-card .head .profile-image > img {
+  width: 100px;
+  border: 1px solid #474747;
+  border-radius: 50%;
+  filter: grayscale(0.7);
+}
+body .profile-card .head .name-headline > h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+body .profile-card .head .name-headline > h2 {
+  font-size: 18px;
+}
+body .profile-card .head .name-headline > span {
+  font-size: 14px;
+}
+body .profile-card .content {
+  position: relative;
+  top: -30px;
+  border-top: 1px solid #474747;
+}
+body .profile-card .content .about {
+  padding: 10px 30px;
+  width: 330px;
+}
+body .profile-card .content .links {
+  text-align: center;
+}
+body .profile-card .content .links > h2 {
+  font-size: 16px;
+  color: #474747;
+}
+body .profile-card .content .links > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body .profile-card .content .links > ul .fa {
+  color: #474747;
+}/*# sourceMappingURL=style.css.map */
