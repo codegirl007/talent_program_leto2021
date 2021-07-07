@@ -8,7 +8,7 @@ Cykly se v programování používají, pokud chceme stejný kód nechat běžet
 * [for...in](#forin)
 * [for...of](#forof)
 
-Každý z těchto cyklů je v různých prohlížečích vykonáván různou rychlostí. Srovnání naleznete [zde](https://blog.bitsrc.io/measuring-performance-of-different-javascript-loop-types-c0e9b1d193ed). Jak optimalizovat jednotlivé typy cyklů si můžete přečíst [zde](https://www.freecodecamp.org/news/how-to-optimize-your-javascript-apps-using-loops-d5eade9ba89f/).
+Každý z těchto cyklů je v různých prohlížečích vykonáván různou rychlostí. Srovnání naleznete [zde](https://blog.bitsrc.io/measuring-performance-of-different-javascript-loop-types-c0e9b1d193ed). Jak optimalizovat jednotlivé typy cyklů si můžete přečíst [zde](https://www.freecodecamp.org/news/how-to-optimize-your-javascript-apps-using-loops-d5eade9ba89f/). Pro testování vlastního kódu a jeho optimalizaci můžete zkusit online nástroj [jsben.ch](https://jsben.ch/wY5fo).
 
 Cykly můžeme přerušit pomocí následujících příkazů: 
 * [break](#break)
