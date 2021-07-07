@@ -1,0 +1,19 @@
+{
+  "name": "attila-tailwind",
+  "version": "1.0.0",
+  "description": "Attila's personal web page created with tailwind css.",
+  "main": "css2_attila.html",
+  "scripts": {
+    "build_prod": "postcss css/styles.css -o build/styles.css --env \"production\"",
+    "build":"postcss css/styles.css -o build/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Huslarová Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
