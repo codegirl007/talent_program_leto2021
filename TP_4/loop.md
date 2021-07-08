@@ -104,7 +104,7 @@ for(var i = 0; i < 3; i++) {
 */
 ```
 
-Zároveň všech může být for cyklus definován neobvykle. První výraz může obsahovat jakýkoliv příkaz, který s má vykonat před započetím cyklu. Může například inicializovat a deklarovat více promněných, které nemusejí mít žádnou spojitost s iterací. Druhý výraz může kromě podmínky obsahovat předem definovanou funkci, která však musí vracet boolean hodnotu, ale kromě této hodnoty může vykonávat jakékoliv příkazy. Tato funkce bude volána před začátkem každé iterace. Třetí výraz je naopak volán na konci každé iterace a nejčastěji inkrementuje nebo dekrementuje promněnou pomocí které iterujeme, ale tato část kódu může zase obsahovat jakékoliv příkazy. Neobvyklé zápisy cyklů for naleznete [zde](#https://blog.bitsrc.io/3-flavors-of-the-for-loop-in-javascript-and-when-to-use-them-f0fb5501bdf3).
+Zároveň všech může být for cyklus definován neobvykle. První výraz může obsahovat jakýkoliv příkaz, který s má vykonat před započetím cyklu. Může například inicializovat a deklarovat více promněných, které nemusejí mít žádnou spojitost s iterací. Druhý výraz může kromě podmínky obsahovat předem definovanou funkci, která však musí vracet boolean hodnotu, ale kromě této hodnoty může vykonávat jakékoliv příkazy. Tato funkce bude volána před začátkem každé iterace. Třetí výraz je naopak volán na konci každé iterace a nejčastěji inkrementuje nebo dekrementuje promněnou pomocí které iterujeme, ale tato část kódu může zase obsahovat jakékoliv příkazy. Neobvyklé zápisy cyklů for naleznete [zde](https://blog.bitsrc.io/3-flavors-of-the-for-loop-in-javascript-and-when-to-use-them-f0fb5501bdf3).
 
 ### Příklad neobvyklého zápisu
 
