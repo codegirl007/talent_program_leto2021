@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringy-úkol3</title>
+</head>
+<body>
+    <script>
+        
+        function firstLetterBig(str){
+           const changedArr = str.split(' ').map(s => s.charAt(0).toUpperCase() + s.substr(1));
+           return changedArr.join(' ');
+        }
+
+        document.write(firstLetterBig('učím se javascript'));
+    
+    </script>
+</body>
+</html>

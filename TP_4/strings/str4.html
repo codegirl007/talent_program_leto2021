@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringy-úkol4</title>
+</head>
+<body>
+    <script>
+        function hideNumbers(cardNumber){
+           const arr = String(cardNumber).split('');  
+           for(let i = 0; i < arr.length - 4; i++){
+               arr.splice(i, 1, '*');
+           }
+           return arr.join('');
+        }
+
+        //test
+        document.write(hideNumbers(4578657845454131));
+    </script>
+</body>
+</html>
