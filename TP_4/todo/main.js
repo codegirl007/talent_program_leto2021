@@ -30,7 +30,7 @@ function deleteLi(el){
 
 
 const searchInput = document.querySelector('.search');
-searchInput.addEventListener('change', search);
+searchInput.addEventListener('input', search);
 
 const div = document.querySelector('.form');
 
