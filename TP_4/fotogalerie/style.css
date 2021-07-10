@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(90, 86, 86);  
+  min-height: 100vh; 
+  font-family: sans-serif;
+}  
+
+.container{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.gallery{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.gallery img{
+    max-width: 220px;
+    height: auto;
+}
+
+.big-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-foto img{
+    max-width: 700px;
+    height: auto;
+    margin: 40px;
+}
+
+#white-border{
+  border: 2px solid white;
+  transform: scale(1.3);
+}
