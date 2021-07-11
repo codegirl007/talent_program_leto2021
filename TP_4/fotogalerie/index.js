@@ -50,8 +50,6 @@ function createGalery(arr){
 
 window.createGalery(images);
 
-
-
 function makeBigger(){
   let whiteBorder = document.querySelector('#white-border');
   whiteBorder.removeAttribute('id');
@@ -77,7 +75,6 @@ right.addEventListener('click', function () {
 
 const left = document.querySelector('.left');
 left.addEventListener('click', function () {
-  
   let number = parseInt(img.className);
   if(number - 1 > -1){
    let whiteBorder = document.querySelector('#white-border');
