@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekty</title>
+</head>
+<body>
+    <script>
+
+        let programming = {
+            languages: ["JavaScript", "Python", "Ruby"],
+            isChallenging: true,
+            isRewarding: true,
+            difficulty: 8,
+            jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+        };
+
+     //1. Na konec pole přidejte jazyk "Java" a zobrazte objekt v konzoli				
+     programming.languages.push('Java');
+     console.log(programming);
+     //2. Změňte difficulty na 10	
+     programming.difficulty = 10;
+     //3. Přidejte nový key isFun s hodnotou true		
+     programming.isFun = true;
+     //4. Prolistujte jazyky a zobrazte je jeden podruhém v konzoli			
+     programming.languages.map(lang => console.log(lang));
+     //5. Prolistujte všechny keys a zobrazte je v konzoli	
+     console.log(Object.keys(programming));
+     //6. Zjistěte pomocí for/in a hasOwnProperty, jestli objekt obsahuje key isChallenging		
+     console.log(programming.hasOwnProperty('isChallenging'));
+     //7. Prolistujte values a zobrazte je v konzoli		
+     console.log(Object.values(programming));
+     //8. Destrukturingem vytáhněte do proměnných languages, isRewarging a difficulty	
+     const {languages, isRewarding, difficulty} = programming;
+     console.log(languages, isRewarding, difficulty);
+     //9. Pomocí assign() metody zamergujte do objektu programming objekt:				
+     let newProperties = {tools: ["brain", "PC", "internet"],		
+			wishes: "Becoming the Developer"}						
+     Object.assign(programming, newProperties);
+     //10. Naklonujte celý objekt pomocí spread syntaxe do objektu clonnedObject				
+     let clonnedObject = {...programming};
+     console.log(clonnedObject);
+     //11. Použijte Object.entries() a for/of loop a zobrazte key-value páry do konzole s pomlčkou:					
+     for (const [key, value] of Object.entries(programming)) {
+          console.log(`${key} - ${value}`);
+     }
+
+    </script>
+</body>
+</html>
