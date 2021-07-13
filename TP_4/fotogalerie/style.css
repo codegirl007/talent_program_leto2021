@@ -45,6 +45,11 @@ body{
     margin: 0;
 }
 
+.left, .right {
+  font-size: 5rem;
+  padding: 0 1rem;
+}
+
 #white-border{
   border: 2px solid white;
   transform: scale(1.3);
