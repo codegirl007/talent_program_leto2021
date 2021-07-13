@@ -1,3 +1,41 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
 body {
-    font-family: sans-serif;
-  }
+  background-image: linear-gradient( to right, rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+}
+
+.click-counter {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-left: -230px;
+  margin-top: 100px;
+}
+
+.click-counter__flex {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.click-counter__flex--p {
+  display: inline-block;
+  border: 1px solid rgba(51,8,103,1);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.click-counter__flex--button {
+  width: 200px;
+  align-self: center;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  font-weight: 550;
+  border-radius: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0.1rem 0.2rem 0.1rem;
+  background-color: rgba(48,207,208,1);
+}

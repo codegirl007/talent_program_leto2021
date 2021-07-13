@@ -1,0 +1,55 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: blue;
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+main {
+    background-color: burlywood;
+}
+
+aside {
+    background-color: darkcyan;
+}
+
+footer {
+    background-color: darkblue;
+}
+
+#logo {
+    width: 40px;
+}
+
+main {
+    padding: 20px;
+}
+
+main>article {
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    font-size: small;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+aside>article {
+    font-size: x-small;
+    padding: 10px;
+}
+
+/*---------Váš kód-------------*/

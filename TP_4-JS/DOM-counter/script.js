@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const increaseButton = document.querySelector('#increase');
 const decreaseButton = document.querySelector('#decrease');
 
