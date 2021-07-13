@@ -1,0 +1,4 @@
+Strings: https://codesandbox.io/s/strings-mini-ukoly-fgjge?file=/index.html
+Objects: https://codesandbox.io/s/objektymini-ukoly-yl4pw
+Pole: https://codesandbox.io/s/polemini-ukoly-ll0e3?file=/src/index.js
+JS a DOM: https://codesandbox.io/s/tp-4-select-vwf0m?file=/src/index.js
