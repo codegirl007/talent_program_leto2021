@@ -1,0 +1,3 @@
+Nejsem spokojená s řešením .check v css pomocí position absolute. Určitě jde udělat, aby .check a .delete byly spolu v divu a tak se mohli pomocí flexboxu justify-content napozicovat lépe. Jak to udělat v JS?
+
+Plus by bylo fajn ten klik na check i vrátit zpátky. Jak?

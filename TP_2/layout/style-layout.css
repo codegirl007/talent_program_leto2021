@@ -1,0 +1,56 @@
+
+body{
+   background-color: white;   
+}
+
+section{
+    width: 1500px;
+    height: 100vh; 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.aqua{
+    background-color: aqua;
+    height: 20%;
+    width: 100%;
+}
+
+.orange{
+    background-color: orange;
+    height: 60%;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.red{
+    background-color: red;
+    height: 60%;
+    width: 50%;  
+    margin-right: 5%;
+}
+
+.purple{
+    background-color: purple;
+    height: 60%;
+    width: 20%;
+}
+
+.black{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 27.5%;
+    bottom: 23.5%;
+    
+}
+
+.blue{
+    background-color: blue;
+    height: 20%;
+    width: 100%;
+}
+

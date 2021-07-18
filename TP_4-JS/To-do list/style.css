@@ -1,0 +1,58 @@
+html {box-sizing: border-box;}
+*,::before, ::after {box-sizing: inherit;}
+
+img {
+    width: 20px;
+}
+
+
+ul li {
+    cursor: pointer;
+}
+
+.todo-list {
+    display: inline-block;
+    border: 50px solid violet;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+input {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border-color: rgb(88, 4, 88);
+}
+
+button {
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(88, 4, 88);
+    border-color: rgb(88, 4, 88);
+    color: white;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.check {
+    position: absolute;
+    left: 80%;
+}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-úkol3</title>
+</head>
+<body>
+    <script>
+
+    let bobsFollowers = ['Mary', 'John', 'Kate', 'Andy', 'Ola'];				
+	let tinasFollowers = ['Sandy', 'Kate', 'John'];	
+    
+    const same = bobsFollowers.map(e => {
+       return tinasFollowers.filter(el => {
+           return el === e;
+       });
+    }).filter(e => {return e != '';})
+
+    console.log(same);
+
+    </script>
+</body>
+</html>
