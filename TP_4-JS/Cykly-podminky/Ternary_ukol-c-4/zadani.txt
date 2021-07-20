@@ -1,0 +1,21 @@
+Vytvořte si malý projekt v codesandbox
+
+Vytvořte funkci coinToss
+
+funkce bude náhodně vybírat heads or tails podle Math.random()<0.5 - použijte ale TERNARY!
+
+vytvořte si objekt:
+
+const images = {
+kitty: 'https://cdn.pixabay.com/photo/2017/10/08/15/08/cat-2830177_960_720.jpg',
+doggy: 'https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg'
+};
+Vytvořte si v Javascriptu:
+
+<img> tag
+
+tagu img přidáme atribut src jehož value vyjádříme opět pomocí ternary
+
+ternary řekne, že pokud zavolaná funkce coinToss bude mít hodnotu heads, zobrazí se v z objektu hodnota property kitty
+
+pokud funkce coinToss bude mít hodnotu tails, zobrazí se doggy

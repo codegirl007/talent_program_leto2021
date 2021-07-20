@@ -1,0 +1,19 @@
+3. Podmínky
+
+Vytvořte si malý projekt v codesandbox
+
+input (label bude "heslo")
+
+button "submit"
+
+paragraf s hláškou
+
+uživatel smí do inputu napsat pouze heslo javascript
+
+uživatel má tři neúspěšné pokusy a při čtvrtém se mu button změní na disabled
+
+při každém neúspěšném pokusu se do paragrafu zobrazí chybová hláška s odečtem pokusů "Máte již jen 2 pokusy" apod
+
+pokud uživatel správně zadá heslo, zobrazí se mu "Heslo ověřeno"
+
+výsledek codesandbox nefunguje: https://codesandbox.io/s/podminky-miniukol-c-3-4bycq?file=/index.html
