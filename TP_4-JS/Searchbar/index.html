@@ -9,6 +9,24 @@
     <title>Search bar</title>
 </head>
 <body>
-    <input type="text">
+    <div>
+        <h1>Search</h1>
+        <input id="input-search" onkeyup="searchBar()" type="text" placeholder="Search...">
+    </div>
+
+    <div class="todo-list">
+        <div>
+            <h1>TODO</h1>
+            <input type="text" id="input">
+            <button onclick="newElement()">Add</button>
+        </div>
+
+        <ul id="myUL">
+            <li>Go to Bodrum</li>
+            <li>Go to Efes</li>
+            <li>Go to Istanbul</li>
+        </ul>
+    </div>
 </body>
+
 </html>
