@@ -13,8 +13,25 @@ const myPage =
 <img src={dog} alt="dog" height="50%" width="50%"/>
 </>;
 
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi",
+  size: {
+    width: "20%",
+    height: "20%"
+  }
+}; 
+
+const animalPict = 
+<>
+<img src={pics.panda} height="20%" width="20%"/>
+<img src={pics.owl} height="20%" width="20%"/>
+<img src={pics.owlCat} height="20%" width="20%"/>
+</>;
+
 ReactDOM.render(
-  myPage,
+  animalPict,
   document.getElementById('root')
 );
 
