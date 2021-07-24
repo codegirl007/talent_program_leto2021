@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    height       : 100vh;
+    display      : grid;
+    place-content: center;
+    background   : rgb(34, 193, 195);
+    background   : linear-gradient(51deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color        : #263D42;
+    font-family  : sans-serif;
+    font-size: 1.5em;
+}
+
+.wrapper {
+    display       : flex;
+    flex-direction: column;
+    box-shadow    : rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.wrapper {
+    padding: 40px;
+}
+
+.wrapper,
+input[type = 'text'],
+button {
+    background-color: #DDDBF1;
+}
+
+.wrapper > div {
+    display: flex;
+}
+
+input[type = 'text'] {
+    border       : none;
+    border-bottom: 2px solid #263D42;
+    width        : 300px;
+}
+
+button {
+    border   : none;
+    font-size: 2em;
+    margin   : 0 0 0 20px;
+    color: #263D42;
+
+}
+
+input[type = 'text']:hover {
+    border-color: #FDBB2D;
+}
+
+button:hover,
+i:hover {
+    color: #FDBB2D;
+}
+
+input[type = 'text']:focus,
+button:focus {
+    outline-color: #FDBB2D;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+ul {
+    padding: 0;
+    margin: 40px 5px 40px 5px;
+    list-style-type: none;
+}
+
+i {
+    float: right;
+    padding: 0 5px;
+}
+
+.fontAwesome{ font-family: 'Helvetica', FontAwesome, sans-serif; }
