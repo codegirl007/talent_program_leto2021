@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photogallery</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
-    <script src =""></script>
+    <script src ="script.js" defer></script>
+    <title>Image Gallery</title>
 </head>
 <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <img src = "./images/arrow-left.png" id="arrow-left" alt="arrow-left" />
         <div class="image-container">
             <img id = "photo" src = "./images/heian-jingu.jpg" />
@@ -23,7 +23,25 @@
         <img src = "./images/arrow-right.png" id="arrow-right" alt="arrow-left" />
     </div>
     <div id = "thumbnail-container">        
-    </div>   
-<script type="text/javascript" src="./script.js"></script>
+    </div>    -->
+
+    <section class="gallery">
+        <img class="gallery__highlight" src="./img/09_corgi_big.jpeg" alt="">
+        <!-- <div class="gallery__text-container">
+            <h1 id="img-title"></h1>
+            <p id="img-description"></p>
+        </div> -->
+        <div class="gallery__preview">
+            <img class="active" src="./img/01_Zajic_small.jpeg" alt="">
+            <img src="./img/02_Slune_small.jpeg" alt="">
+            <img src="./img/03_Sova_small.jpeg" alt="">
+            <img src="./img/05_lednacek_small.jpeg" alt="">
+            <img src="./img/04_mops_small.jpeg" alt="">
+            <img src="./img/06_husky_small.jpeg" alt="">
+            <img src="./img/07_pes_small.jpeg" alt="">
+            <img src="./img/08_pes_small.jpeg" alt="">
+        </div>
+    </section>
+
 </body>
 </html>
