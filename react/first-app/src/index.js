@@ -12,10 +12,30 @@ const myPage = (
   <span>Mé jméno: {name}</span><br></br>
   <img src={dog} alt="dog" height="50%" width="50%"></img>
 </>
-)
+);
+
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi",
+  size: {
+    width: "20%",
+    height: "20%"
+  }
+}; 
+
+const animalPict = (
+<>
+<img src={pics.panda} alt="" width={pics.size.width} height={pics.size.height}></img>
+<img src={pics.owl} alt="" width={pics.size.width} height={pics.size.height}></img>
+<img src={pics.owlCat} alt="" width={pics.size.width} height={pics.size.height}></img>
+</>
+);
+
 
 ReactDOM.render(
-  myPage,
+  // myPage,
+  animalPict,
   document.getElementById('root')
 );
 
